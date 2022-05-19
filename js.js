@@ -131,7 +131,7 @@ cleard.onclick = ()=>{ //clear button
     prevOperator = 0;
 }
 
-function numberButtons(btn,num){
+function numberButtons(btn,num){ //number buttons function to add display
     btn.addEventListener('click', () => {
         displayScreen = displayScreen.toString();
         displayScreen= displayScreen.concat(num);
@@ -141,7 +141,7 @@ function numberButtons(btn,num){
       
 };
 
-function activateNumberButtons(){
+function activateNumberButtons(){//loop to activate all the buttons
     buttonObject = {0:but0, 1:but1, 2:but2, 3:but3, 4:but4, 
         5:but5 ,6:but6, 7:but7, 8:but8, 9:but9};
     for (let but in buttonObject){
@@ -161,11 +161,13 @@ backd.onclick = () =>{//back button
     displayScreen = displayScreen.toString();
     if (displayScreen.length > 1){
         displayScreen= displayScreen.slice(0,-1);
+    } else {
+        displayScreen = 0;
     };
     display.textContent = displayScreen;
 };
 
 activateNumberButtons();
-display.textContent = displayScreen;
-stored.textContent = storedScreen;
+display.textContent = displayScreen;//initial displays
+stored.textContent = storedScreen;//initial displays
 

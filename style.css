@@ -2,12 +2,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: lightcoral;
 }
 
 #calc{
-    height: 1100px;
+    height: 900px;
     width: 600px;
-    background-color: lavenderblush;
+    background-color: gray;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -15,14 +16,15 @@ body{
 }
 
 #display{
-    margin-top: 50px;
+    margin-top: 30px;
     max-width: 400px;
-    width: 400px;
+    width: 300px;
     padding: 100px 100px;
-    background-color: bisque;
+    background-color: lightcyan;
     display: flex;
     flex-flow: column;
     justify-content: center;
+    border-radius: 10%;
 }
 
 #shownNumbers{
@@ -41,13 +43,28 @@ button{
     border-radius: 10%;
     background-color: aliceblue;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 30px;
 }
 
-#operators, #numbers{
-    margin-top: 50px;
+#operators, #numbers, #bottomops{
+    margin-top: 30px;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
     gap: 15px;
+}
+
+#operators button{
+    background-color: lavenderblush;
+    color: midnightblue;
+}
+
+#numbers button{
+    background-color: lemonchiffon;
+    color: teal;
+}
+
+#bottomops button{
+    background-color: cornsilk;
+    color: slategray;
 }
