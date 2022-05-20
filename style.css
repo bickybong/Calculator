@@ -2,17 +2,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightcoral;
+    background-color: floralwhite;
 }
 
 #calc{
     height: 900px;
-    width: 600px;
+    width: 500px;
     background-color: gray;
     display: flex;
     flex-flow: column;
     align-items: center;
     border-radius: 5%;
+    padding: 20px;
 }
 
 #display{
@@ -39,7 +40,7 @@ body{
 }
 
 button{
-    padding: 40px;
+    padding: 30px 40px;
     border-radius: 10%;
     background-color: aliceblue;
     font-weight: bolder;
@@ -56,15 +57,17 @@ button{
 
 #operators button{
     background-color: lavenderblush;
-    color: midnightblue;
+    color: black;
 }
 
 #numbers button{
     background-color: lemonchiffon;
-    color: teal;
+    color: black;
+    max-width: 92px;
+
 }
 
 #bottomops button{
-    background-color: cornsilk;
-    color: slategray;
+    background-color: lavenderblush;
+    color: black;
 }
